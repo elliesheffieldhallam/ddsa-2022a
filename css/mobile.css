@@ -1,0 +1,86 @@
+/* Mobile First */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.headerContainer {
+    background: rgba(0, 0, 0, 0.8); 
+} /*rgb refers to the colours, a refers to the level of transparency with 0 being completelt transparent*/
+
+header h2 { 
+    color: #fff;
+} /*are you in the header? and are you h2? (contextual selector)*/
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles img {
+    width: 100%;
+}
+
+.articles>div {
+    flex-basis: 100%;
+} /*go to the articles class, and select divs under the articles clas*s/
+/*applies to all of the F1 children, not grandchildren divs*/
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+
+nav ul li {
+    padding:8px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    display: block; /* makes it so that a user can click on the nav across the screen, rather than specifically 
+    on the tiny bit of screen that shows the text - makes it mobile user friendly */
+  }
+
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header > div{
+    padding:10px;
+}
+
+nav{
+    flex: 1 1 100%;
+}
+
+footer{
+    background: rgba(0,0,0,0.8);
+    margin-top: 40px;
+    padding:40px;
+}
+footer > div > p{
+    color:#fff;
+    text-align: center;
+    font-size:0.8rem;
+}
+
+main{
+    margin:0 10px
+}
+
+nav{
+    flex: 1 1 100%;
+    overflow: hidden;
+    transition: height 0.5s
+}
+
+nav{
+    flex: 1 1 100%;
+    overflow: hidden;
+    transition: height 0.5s
+}
